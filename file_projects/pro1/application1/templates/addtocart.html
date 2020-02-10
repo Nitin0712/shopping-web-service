@@ -1,0 +1,228 @@
+{% extends 'base.html' %}
+{% block content %}
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    {% load staticfiles %}
+    <link rel="stylesheet" href="{% static '/css/style.css' %}"/>
+    <title>Title</title>
+    <style>
+        .pro_img{
+             width:400px;
+             height:300px
+        }
+        .pro_price{
+            text-align:right
+        }
+        .pro_name{
+            font-size:18;
+            font-weight:bold
+        }
+    </style>
+</head>
+<body>
+    <div class="container" >
+            <div class="my-list" style="margin-left:20px">
+                <h2 style="text-align:center;font-weight:bold">Add to Cart Product</h2>
+<!--                {{ cartdata.product_name }}-->
+<!--                {{ cartdata.product_price }}-->
+<!--                <img src="{{ cartdata.product_image.url }}" width="100px" height="100px">-->
+<!--                    <form class="post-form" action="/update/{{ editForm.id }}" method="POST" enctype="multipart/form-data">-->
+<!--                        {% csrf_token %}-->
+                        {% for cart_data in carts_data %}
+                            <div class="pro_name">{{ cart_data.cart_product.product_name }}</div>
+                            <div class="pro_price">&#8377; {{ cart_data.cart_product.product_price }}</div>
+                            <img class="pro_img" src="{{ cart_data.cart_product.product_image.url }}">
+                            <div class="a-row sc-action-links">
+                                <span class="sc-action-quantity" data-old-value="1">
+                                    <span class="sc-invisible-when-no-js">
+                                        <span class="a-dropdown-container">
+                                            <label class="a-native-dropdown">Qty:<span class="sc-offscreen-label" aria-label="Quantity"></span></label>
+                                            <select name="quantity" autocomplete="off" data-a-touch-header="Quantity" tabindex="0" class="a-native-dropdown a-declarative" aria-pressed="false">
+                                                <option value="0" data-a-css-class="quantity-option">
+                                                    0 (Delete)
+                                                </option>
+                                                <option value="{{ cart_data.cart_quantity }}" data-a-css-class="quantity-option" selected="">
+                                                  {{ cart_data.cart_quantity }}
+                                                </option>
+                                                <option value="2" data-a-css-class="quantity-option">
+                                                    2
+                                                </option>
+                                                <option value="3" data-a-css-class="quantity-option">
+                                                    3
+                                                </option>
+                                                <option value="4" data-a-css-class="quantity-option">
+                                                    4
+                                                </option>
+                                                <option value="5" data-a-css-class="quantity-option">
+                                                    5
+                                                </option>
+                                                <option value="6" data-a-css-class="quantity-option">
+                                                    6
+                                                </option>
+                                                <option value="7" data-a-css-class="quantity-option">
+                                                    7
+                                                </option>
+                                                <option value="8" data-a-css-class="quantity-option">
+                                                    8
+                                                </option>
+                                                <option value="9" data-a-css-class="quantity-option">
+                                                    9
+                                                </option>
+                                                <option value="10" data-a-css-class="quantity-option quantity-option-10">
+                                                    10+
+                                                </option>
+                                            </select>
+
+                                        </span>
+                                        {% endfor %}
+        <!--&lt;!&ndash;                        <input type="file" name="product_image">&ndash;&gt;-->
+        <!--&lt;!&ndash;                        <button type="submit">Update</button>&ndash;&gt;-->
+        <!--                        <div class="form-group">-->
+        <!--                            <label for="exampleInputName">Product Name</label>-->
+        <!--                            <input type="test" class="form-control" id="exampleInputName" aria-describedby="proName" name="product_name" value="{{ editForm.product_name }}">-->
+        <!--                            <small id="proName" class="form-text text-muted">We'll never share your email with anyone else.</small>-->
+        <!--                        </div>-->
+        <!--                        <div class="form-group">-->
+<!--                            <label for="exampleInputPrice">Product Price</label>-->
+<!--                            <input type="number" class="form-control" id="exampleInputPrice" name="product_price" value="{{ editForm.product_price }}">-->
+<!--                        </div>-->
+<!--                        <div class="form-group">-->
+<!--                            <label for="exampleFormControlFile1">Product Image</label>-->
+<!--                            <img src="{{ editForm.product_image.url }}" width="100px" height="100px">-->
+<!--                            <input type="file" class="form-control-file" id="exampleFormControlFile1" name="product_image">-->
+<!--                         </div>-->
+<!--                        <button type="submit" class="btn btn-primary">Update</button>-->
+<!--                        <a href="/show" class="btn btn-primary" role="button">Back</a>-->
+<!--                    </form>-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <input type="text" maxlength="3" value="1" autocomplete="off" name="quantityBox" class="a-input-text a-width-small sc-quantity-textfield sc-hidden" aria-label="Quantity">
+
+
+                            <span class="a-spacing-top-small">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <span class="a-button a-button-primary a-button-small sc-update-link aok-hidden" id="a-autoid-1"><span class="a-button-inner"><a href="javascript:void(0);" data-action="update" class="a-button-text" role="button" id="a-autoid-1-announce">
+            Update
+
+            <span class="aok-offscreen">Huntsman Era Men's Military Baseball India Cricket Cap</span>
+         </a></span></span>
+
+                            </span>
+                        </span>
+
+
+
+                <noscript>
+
+
+                            <span>
+                                <span>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <input type="text" maxlength="3" value="1" name="quantity.C724b0334-8ba9-4b1f-9e60-ef6d2da82cb4" class="a-input-text a-width-small a-spacing-mini"/>
+
+                                </span>
+
+
+
+
+
+
+
+
+
+
+        <input  type="submit"
+                            name="submit.update-quantity.C724b0334-8ba9-4b1f-9e60-ef6d2da82cb4"
+                            value="Update" />
+
+
+                            </span>
+
+
+
+                </noscript>
+
+
+
+
+
+            </span><i class="a-icon a-icon-text-separator" role="img" aria-label="|"></i><span class="a-size-small sc-action-delete">
+            <span class="a-declarative" data-action="sc-item-action" data-sc-item-action="{&quot;itemID&quot;:&quot;C724b0334-8ba9-4b1f-9e60-ef6d2da82cb4&quot;,&quot;itemType&quot;:&quot;active&quot;,&quot;isWishListItem&quot;:0,&quot;action&quot;:&quot;delete&quot;,&quot;isFresh&quot;:0}">
+                <input type="submit" name="submit.delete.C724b0334-8ba9-4b1f-9e60-ef6d2da82cb4" value="Delete" aria-label="Delete Huntsman Era Men's Military Baseball India Cricket Cap">
+            </span>
+        </span><i class="a-icon a-icon-text-separator" role="img" aria-label="|"></i><span class="a-size-small sc-action-save-for-later">
+            <span class="a-declarative" data-action="sc-item-action" data-sc-item-action="{&quot;itemID&quot;:&quot;C724b0334-8ba9-4b1f-9e60-ef6d2da82cb4&quot;,&quot;itemType&quot;:&quot;active&quot;,&quot;isWishListItem&quot;:0,&quot;action&quot;:&quot;save-for-later&quot;,&quot;isFresh&quot;:0}">
+                <input type="submit" name="submit.save-for-later.C724b0334-8ba9-4b1f-9e60-ef6d2da82cb4" value="Save for later" aria-label="Save for later Huntsman Era Men's Military Baseball India Cricket Cap">
+            </span>
+        </span><i class="a-icon a-icon-text-separator" role="img" aria-label="|"></i><span class="a-size-small sc-invisible-when-no-js">
+    <span class="a-declarative" data-action="a-modal" data-a-modal="{&quot;cache&quot;:&quot;0&quot;,&quot;hideHeader&quot;:&quot;true&quot;,&quot;width&quot;:&quot;80%&quot;,&quot;ajaxFailMsg&quot;:&quot;We\u2019re sorry, an error has occurred. Please try again.&quot;,&quot;url&quot;:&quot;/compare/product/B07VFLZFN3/ref=psdc_cart_1968039031_B07VFLZFN3?viewType=cart&quot;,&quot;height&quot;:&quot;570&quot;}" id="comparison-lite-modal-B07VFLZFN3">
+
+        <input type="submit" name="submit.compare.C724b0334-8ba9-4b1f-9e60-ef6d2da82cb4" value="See more like this" aria-label="See more like this ">
+
+    </span>
+</span>
+</div>
+            </div>
+    </div>
+</body>
+{% endblock %}
+</html>

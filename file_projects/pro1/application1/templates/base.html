@@ -1,0 +1,57 @@
+<html lang="en">
+<!--{% load staticfiles %}-->
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  {% load staticfiles %}
+    <link rel="stylesheet" href="{% static '/css/style.css' %}"/>
+    <title>Title</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" >
+  <img src="/media/images/creative-logo-transparent.png"   class="card-img-top logo-img" />
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navb">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navb">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+         <a href="index"  class="btn nav-btn" role="button">Add Product</a>
+      </li>
+      <li class="nav-item">
+        <a href="{% url 'home' %}"  class="btn nav-btn" role="button">Home</a>
+      </li>
+      {% if request.session.is_logged %}
+        <li class="nav-item">
+           <a href="{% url 'logout' %}"  class="btn nav-btn" role="button">Sign Out</a>
+        </li>
+        <span style="font-size: 24px;font-variant-caps: all-petite-caps;color: #4e4848;">Hello, {{ user.username }}</span>
+      {% else %}
+        <li class="nav-item">
+           <a href="{% url 'login' %}"  class="btn nav-btn" role="button">Sign In / Sign Up</a>
+        </li>
+      {% endif %}
+    </ul>
+    <form class="form-inline my-2 my-lg-0" action="{% url 'search' %}" >
+      {% csrf_token %}
+      <input class="form-control mr-sm-2" type="text" placeholder="Search" name="search">
+      <button class="btn btn-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+       {% if request.session.is_logged %}
+     <a href="view_cart/{{ user.id }}">
+        <span class="glyphicon glyphicon-shopping-cart" style="font-size: 30px;margin-left: 20px;"></span>
+    </a>
+      {% else %}
+      <a href="{% url 'login' %}">
+        <span class="glyphicon glyphicon-shopping-cart" style="font-size: 30px;margin-left: 20px;"></span>
+    </a>
+      {% endif %}
+  </div>
+</nav>
+</body>
+</html>
+{% block content %}
+{% endblock %}

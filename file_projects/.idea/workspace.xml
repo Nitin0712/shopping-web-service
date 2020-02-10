@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="4f031531-91fa-4c5b-a490-f8653f73c5b4" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1UPvjk7ky9s8wPVMzjFlCY5xT1l" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="HTML" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/pro1/application1/models" />
+      <recent name="$PROJECT_DIR$/pro1/application1/templates" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/pro1/application1/models" />
+      <recent name="$PROJECT_DIR$/project1/app1" />
+      <recent name="$PROJECT_DIR$/project1/static/app1" />
+    </key>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4f031531-91fa-4c5b-a490-f8653f73c5b4" name="Default Changelist" comment="" />
+      <created>1575271181391</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1575271181391</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="291" y="122" width="1084" height="682" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1576239723875">
+      <screen x="67" y="27" width="1533" height="873" />
+    </state>
+    <state x="291" y="122" width="1084" height="682" key="#com.intellij.execution.impl.EditConfigurationsDialog/67.27.1533.873@67.27.1533.873" timestamp="1576239723875" />
+    <state x="566" y="211" width="524" height="502" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1576232870912">
+      <screen x="67" y="27" width="1533" height="873" />
+    </state>
+    <state x="566" y="211" width="524" height="502" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/67.27.1533.873@67.27.1533.873" timestamp="1576232870912" />
+    <state x="616" y="220" width="424" height="484" key="FileChooserDialogImpl" timestamp="1577168675072">
+      <screen x="67" y="27" width="1533" height="873" />
+    </state>
+    <state x="616" y="220" width="424" height="484" key="FileChooserDialogImpl/67.27.1533.873@67.27.1533.873" timestamp="1577168675072" />
+    <state x="489" y="291" key="com.intellij.ide.util.TipDialog" timestamp="1577168643867">
+      <screen x="67" y="27" width="1533" height="873" />
+    </state>
+    <state x="489" y="291" key="com.intellij.ide.util.TipDialog/67.27.1533.873@67.27.1533.873" timestamp="1577168643867" />
+    <state x="167" y="125" width="1333" height="675" key="dock-window-1" timestamp="1575619936509">
+      <screen x="67" y="27" width="1533" height="873" />
+    </state>
+    <state x="167" y="125" width="1333" height="675" key="dock-window-1/67.27.1533.873@67.27.1533.873" timestamp="1575619936509" />
+    <state x="167" y="125" width="1333" height="675" key="dock-window-2" timestamp="1575619936509">
+      <screen x="67" y="27" width="1533" height="873" />
+    </state>
+    <state x="167" y="125" width="1333" height="675" key="dock-window-2/67.27.1533.873@67.27.1533.873" timestamp="1575619936509" />
+    <state x="480" y="198" width="707" height="528" key="find.popup" timestamp="1576066582997">
+      <screen x="67" y="27" width="1533" height="873" />
+    </state>
+    <state x="480" y="198" width="707" height="528" key="find.popup/67.27.1533.873@67.27.1533.873" timestamp="1576066582997" />
+    <state x="482" y="181" width="700" height="530" key="recent.locations.popup" timestamp="1575465857907">
+      <screen x="67" y="27" width="1533" height="873" />
+    </state>
+    <state x="482" y="181" width="700" height="530" key="recent.locations.popup/67.27.1533.873@67.27.1533.873" timestamp="1575465857907" />
+    <state x="496" y="212" key="search.everywhere.popup" timestamp="1576232345222">
+      <screen x="67" y="27" width="1533" height="873" />
+    </state>
+    <state x="496" y="212" key="search.everywhere.popup/67.27.1533.873@67.27.1533.873" timestamp="1576232345222" />
+  </component>
+</project>
